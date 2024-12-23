@@ -8,7 +8,7 @@ import platform
 import re
 from datetime import datetime
 from colorama import Fore, init
-from typing import List, Tuple
+from typing import Tuple
 init(autoreset=True)
 composer_deps = []
 npm_deps = []
