@@ -1,4 +1,6 @@
 import os
+import sys
+import platform
 import re
 from datetime import datetime
 from gtts import gTTS
@@ -52,7 +54,7 @@ while (lang not in available_langs) or (not any(re.search(re.escape(ext) + r'$',
       continue
     slow_opt = input(Fore.CYAN + "Do you want the text to be read slowly? (Enter Y for yes, else it won't):\n").strip().upper()
     if slow_opt == 'Y': slowdown = True
-    read_text(text=content, lang=lang_opt, tld=tld_opt, slow=slowdown)
+    read_text(text=f"Hello, Letícia. I'm a {sys.version.split(" ")[0]} Python bot made by {os.getlogin()} running in {platform.system()} {platform.release()} at {os.cpu_count()} during {datetime.now()}.\nLet's analyze your message:\nHmm... Eu posso levar gin tu curte ?\n Ha ha ha ha ha ha ha ha ha fuck you gay ha ha ha ha ha ha 01001010101010101010101 ", lang=lang_opt, tld=tld_opt, slow=slowdown)
     break
   except Exception as e:
     print(Fore.RED + "As unkown error has prevented the execution.")
