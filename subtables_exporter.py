@@ -177,7 +177,8 @@ def main():
                 df = pd.read_excel(file_path, header=None, engine='openpyxl', dtype=str)
                 print (Fore.GREEN + "Successfully created dataframe using the spreadsheet file!")
             heading_indexes = []
-            pattern = re.compile(r'^balc[aã]o', re.IGNORECASE)
+            # PLACEHOLDER -> REPLACE WITH THE ACTUAL HEADING PATTERN
+            pattern = re.compile(r'^heading', re.IGNORECASE)
             print(Fore.BLUE + 'Looking for "Heading" headers...')
             for idx, row in df.iterrows():
                 for cell in row:
