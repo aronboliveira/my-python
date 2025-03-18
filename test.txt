@@ -1,0 +1,1 @@
+"Hello, Letícia. I'm a {sys.version.split(" ")[0]} Python bot made by {os.getlogin()} running in {sys.platform} at {os.cpu_count} during {datetime.now()}.\nLet's analyze your message:\nHmm... Eu posso levar gin tu curte ?\n Ha ha ha ha ha ha ha ha ha fuck you gay ha ha ha ha ha ha 01001010101010101010101 "
